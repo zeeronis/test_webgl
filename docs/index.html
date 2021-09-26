@@ -71,12 +71,13 @@
         }).catch((message) => {
           alert(message);
         });
+      };
 
         setTimeout(() => {
-            canvas.style.width = window.innerWidth + "px";
-            canvas.style.height = window.innerHeight  + "px";
+            canvas.style.width = window.clientWidth + "px";
+            canvas.style.height = window.clientHeight + "px";
         }, 1000);
-      };
+
       document.body.appendChild(script);
     </script>
   </body>
