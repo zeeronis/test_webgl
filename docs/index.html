@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Mindustry_Calc</title>
+    <title>Mindustry 6.0 Calc</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -71,6 +71,11 @@
         }).catch((message) => {
           alert(message);
         });
+
+        setTimeout(() => {
+            canvas.style.width = window.innerWidth + "px";
+            canvas.style.height = window.innerHeight  + "px";
+        }, 1000);
       };
       document.body.appendChild(script);
     </script>
